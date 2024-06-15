@@ -19,7 +19,7 @@
     <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
   </div>
 
-  <footer style="padding: 10px"> Copyright &#169; 2024 Jufianto. All Rights Reserved</footer>
+  <footer> Copyright &#169; 2024 Jufianto. All Rights Reserved</footer>
 </template>
 
 
@@ -139,7 +139,6 @@ export default {
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    outline: none;
   }
 
   .search-input:focus {
@@ -153,7 +152,6 @@ export default {
     background-color: #00ADB5;
     color: #fff;
     cursor: pointer;
-    outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -168,12 +166,15 @@ export default {
     background-color: #00ADB5;
     color: #fff;
     cursor: pointer;
-    outline: none;
     margin-top: 20px;
   }
 
   .show-more-button:hover {
     background-color: #3be7f0;
+  }
+
+  footer {
+    padding: 10px;
   }
 </style>
 
